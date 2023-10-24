@@ -1,0 +1,54 @@
+﻿@model GeomidisSystem.Models.PaisExample
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PaisExample</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="CANBEN" class="control-label"></label>
+                <input asp-for="CANBEN" class="form-control" />
+                <span asp-validation-for="CANBEN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CANBEN2" class="control-label"></label>
+                <input asp-for="CANBEN2" class="form-control" />
+                <span asp-validation-for="CANBEN2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CANBEN3" class="control-label"></label>
+                <input asp-for="CANBEN3" class="form-control" />
+                <span asp-validation-for="CANBEN3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CANBEN4" class="control-label"></label>
+                <input asp-for="CANBEN4" class="form-control" />
+                <span asp-validation-for="CANBEN4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CANBEN5" class="control-label"></label>
+                <input asp-for="CANBEN5" class="form-control" />
+                <span asp-validation-for="CANBEN5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
