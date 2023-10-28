@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ideasg\\geomidis\\proyecto\\back\\GeomidisSystem\\GeomidisSystem.csproj": {}
+    "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj": {}
   },
   "projects": {
-    "D:\\Ideasg\\geomidis\\proyecto\\back\\GeomidisSystem\\GeomidisSystem.csproj": {
+    "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ideasg\\geomidis\\proyecto\\back\\GeomidisSystem\\GeomidisSystem.csproj",
+        "projectUniqueName": "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj",
         "projectName": "GeomidisSystem",
-        "projectPath": "D:\\Ideasg\\geomidis\\proyecto\\back\\GeomidisSystem\\GeomidisSystem.csproj",
+        "projectPath": "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj",
         "packagesPath": "C:\\Users\\crysa\\.nuget\\packages\\",
-        "outputPath": "D:\\Ideasg\\geomidis\\proyecto\\back\\GeomidisSystem\\obj\\",
+        "outputPath": "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\crysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,29 +42,31 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.12, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.23, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
             },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "NetTopologySuite.IO.GeoJSON": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "NetTopologySuite.IO.GeoJSON4STJ": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": {
               "target": "Package",
               "version": "[7.0.11, )"
             }

@@ -11,6 +11,7 @@ namespace GeomidisSystem.Models
         public string CANBEN3 { get; set; } = null!;
         public string CANBEN4 { get; set; } = null!;
         public string CANBEN5 { get; set; } = null!;
+        public DateTime Date { get; set; }
 
     }
 }

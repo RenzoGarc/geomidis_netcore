@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GeomidisSystem
 build_property.RootNamespace = GeomidisSystem
-build_property.ProjectDir = D:\Ideasg\geomidis\proyecto\back\GeomidisSystem\
+build_property.ProjectDir = D:\Ideasg\geomidis\proyecto\back\geomidis_netcore\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Ideasg\geomidis\proyecto\back\GeomidisSystem
+build_property.MSBuildProjectDirectory = D:\Ideasg\geomidis\proyecto\back\geomidis_netcore
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/Home/Index.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/Home/Privacy.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/PaisExamples/Create.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/PaisExamples/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc0V4YW1wbGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/PaisExamples/Delete.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/PaisExamples/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc0V4YW1wbGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/PaisExamples/Details.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/PaisExamples/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc0V4YW1wbGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/PaisExamples/Edit.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/PaisExamples/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc0V4YW1wbGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/PaisExamples/Index.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/PaisExamples/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc0V4YW1wbGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/Shared/Error.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/_ViewImports.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/_ViewStart.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ideasg/geomidis/proyecto/back/GeomidisSystem/Views/Shared/_Layout.cshtml]
+[D:/Ideasg/geomidis/proyecto/back/geomidis_netcore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pfe32az6b1
