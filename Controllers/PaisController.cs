@@ -18,7 +18,8 @@ namespace GeomidisSystem.Controllers
         {
             _context = context;
         }
-
+        //Recibir servicio en crudo - a punto
+        //
         [HttpPost]
         [Route("caratambs")]
         public async Task<IActionResult> RegisterCaratambs(List<SpgPsCaratamb> spgPsCaratamb)
