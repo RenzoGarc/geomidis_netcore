@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj": {}
+    "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj": {
+    "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj",
+        "projectUniqueName": "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj",
         "projectName": "GeomidisSystem",
-        "projectPath": "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\obj\\",
+        "projectPath": "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj",
+        "packagesPath": "C:\\Users\\crysa\\.nuget\\packages\\",
+        "outputPath": "D:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\crysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -51,6 +51,11 @@ namespace GeomidisSystem.Controllers
             {
                 var spgPsPuatpias = await paisServices.Puatpias();
 
+                if (spgPsPuatpias.Count == 0)
+                {
+                    return StatusCode(500, "No se registraron datos!");
+                }
+
                 for (int i = 0; i < spgPsPuatpias.Count; i++)
                 {
                     _context.Add(spgPsPuatpias[i]);
