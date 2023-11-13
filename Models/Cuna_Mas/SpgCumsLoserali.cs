@@ -9,18 +9,21 @@ namespace GeomidisSystem.Models.Cuna_Mas
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string CODLOC { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? CODLOC { get; set; } = null!;
         public string? SERALI { get; set; } = null!;
         public string? COMGES { get; set; } = null!;
-        public string? DEPART { get; set; } = null!;
-        public string? PROVIN { get; set; } = null!;
-        public string? DISTRI { get; set; } = null!;
-        public string? CENPOB { get; set; } = null!;
+        public string? UBIGEO { get; set; } = null!;
+        public string? COCEPO { get; set; } = null!;
         public string? DIRECC { get; set; } = null!;
+        public string? REFERE { get; set; } = null!;
         public string? ESTLSA { get; set; } = null!;
         public float? COUBIX { get; set; } = 0;
         public float? COUBIY { get; set; } = 0;
-        public int? FOTOLO { get; set; } = 0;
+        public string? FOTOLO { get; set; } = null!;
         public Point? IDEASG { get; set; } = null!;
     }
 }

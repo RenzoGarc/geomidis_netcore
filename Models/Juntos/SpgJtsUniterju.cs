@@ -9,13 +9,15 @@ namespace GeomidisSystem.Models.Juntos
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int COUNTE { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? COUNTE { get; set; } = null!;
         public string? NOMUT { get; set; } = null!;
-        public int? CANPOB { get; set; } = 0;
         public string? NUMIOB { get; set; } = null!;
         public string? NUHOAB { get; set; } = null!;
-        public float? COUBIX { get; set; } = 0;
-        public float? COUBIY { get; set; } = 0;
-        public Point? IDEASG { get; set; } = null!;
+        public Geometry? GEOM { get; set; } = null!;
+        public Geometry? IDEASG { get; set; } = null!;
     }
 }

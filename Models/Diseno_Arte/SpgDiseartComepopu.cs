@@ -9,13 +9,15 @@ namespace GeomidisSystem.Models.Diseno_Arte
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string CODCOM { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? CODCOM { get; set; } = null!;
         public string? NOMLOC { get; set; } = null!;
         public string? DIRCOM { get; set; } = null!;
-        public string? DEPART { get; set; } = null!;
-        public string? PROVIN { get; set; } = null!;
-        public string? DISTRI { get; set; } = null!;
-        public string? CENPOB { get; set; } = null!;
+        public string? UBIGEO { get; set; } = null!;
+        public string? COCEPO { get; set; } = null!;
         public int? CANBEN { get; set; } = 0;
         public string? ESTCOM { get; set; } = null!;
         public string? RRCEAT { get; set; } = null!;

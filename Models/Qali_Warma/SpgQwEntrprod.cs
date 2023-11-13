@@ -9,7 +9,11 @@ namespace GeomidisSystem.Models.Qali_Warma
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string COENPR { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? COENPR { get; set; } = null!;
         public string? CENEDU { get; set; } = null!;
         public string? RESDIR { get; set; } = null!;
         public string? NOMPRO { get; set; } = null!;

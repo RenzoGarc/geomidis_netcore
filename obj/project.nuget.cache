@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QmW0fvTRbaxGmnWO2ofRvppixXBsovLBhZT2xT3Z0LWoiK5tpEX3Cr+qRBTx5jsyI3EgN5JLleNLwbvvrsvKvw==",
+  "dgSpecHash": "za9hXTo9GXC+n51akUoTeIuTeKnyNs5j3+z3StBxybTJ5TperipopjQvIXyCk6KBNqBc0u8UhaFmeDP7hyt3Ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj",
+  "projectFilePath": "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\GeomidisSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diego\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

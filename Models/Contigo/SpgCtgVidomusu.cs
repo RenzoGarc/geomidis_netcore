@@ -7,19 +7,23 @@ namespace GeomidisSystem.Models.Contigo
     [Table("spg_ctg_vidomusu", Schema = "espaciales")]
     public class SpgCtgVidomusu
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int CODOBJ { get; set; }
         public int? TIPDOC { get; set; } = 0;
         public int? NRODOC { get; set; } = 0;
         public string? NOMCOM { get; set; } = null!;
-        public DateTime FEULVI { get; set; }
+        public string? FEULVI { get; set; } = null!;
         public string? TIPVIS { get; set; } = null!;
         public string? TIPACO { get; set; } = null!;
         public string? VISACO { get; set; } = null!;
         public string? FOFACA { get; set; } = null!;
         public float? CUBVIX { get; set; } = 0;
         public float? CUBVIY { get; set; } = 0;
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
+        public string? UBIGEO { get; set; } = null!;
         public Point? IDEASG { get; set; } = null!;
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
     }
 }

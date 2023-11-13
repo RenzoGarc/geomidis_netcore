@@ -9,13 +9,12 @@ namespace GeomidisSystem.Models.Focalizacion
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string CODHOG { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? CODHOG { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
-        public string? DEPART { get; set; } = null!;
-        public string? PROVIN { get; set; } = null!;
-        public string? DISTRI { get; set; } = null!;
-        public string? COCEPO { get; set; } = null!;
-        public string? VECEPO { get; set; } = null!;
         public string? IDHOGA { get; set; } = null!;
         public string? DIRECC { get; set; } = null!;
         public string? REFERE { get; set; } = null!;

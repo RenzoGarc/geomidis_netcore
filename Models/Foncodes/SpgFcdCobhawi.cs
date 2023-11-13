@@ -7,16 +7,18 @@ namespace GeomidisSystem.Models.Foncodes
     [Table("spg_fcd_cobhawi", Schema = "espaciales")]
     public class SpgFcdCobhawi
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? UBIGEO { get; set; } = null!;
         public int? CANHOG { get; set; } = 0;
         public int? CACEPO { get; set; } = 0;
         public float? COOUBX { get; set; } = 0;
         public float? COOUBY { get; set; } = 0;
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-        public Point? IDEASG { get; set; } = null!;
-        public string? DIHAWI { get; set; } = null!;
-        public string? PRHAWI { get; set; } = null!;
-        public string? DEHAWI { get; set; } = null!;
+        public Geometry? IDEASG { get; set; } = null!;
+        public Geometry? GEOMTR { get; set; } = null!;
     }
 }

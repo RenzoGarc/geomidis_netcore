@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj": {}
+    "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\GeomidisSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj": {
+    "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\GeomidisSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj",
+        "projectUniqueName": "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\GeomidisSystem.csproj",
         "projectName": "GeomidisSystem",
-        "projectPath": "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\GeomidisSystem.csproj",
+        "projectPath": "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\GeomidisSystem.csproj",
         "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\Source\\Repos\\geomidis_netcore\\obj\\",
+        "outputPath": "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",

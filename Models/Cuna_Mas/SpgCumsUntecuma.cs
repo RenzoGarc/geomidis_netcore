@@ -9,15 +9,18 @@ namespace GeomidisSystem.Models.Cuna_Mas
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string COUNTE { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? COUNTE { get; set; } = null!;
         public string? UNITER { get; set; } = null!;
         public int? CACOGE { get; set; } = 0;
         public int? CANFAM { get; set; } = 0;
         public int? CANCOGE { get; set; } = 0;
         public int? CANUSU { get; set; } = 0;
         public int? CANLOC { get; set; } = 0;
-        public float? COUBIX { get; set; } = 0;
-        public float? COUBIY { get; set; } = 0;
-        public Point? IDEASG { get; set; } = null!;
+        public Geometry? IDEASG { get; set; } = null!;
+        public Geometry? GEOMTR { get; set; } = null!;
     }
 }

@@ -9,14 +9,17 @@ namespace GeomidisSystem.Models.Qali_Warma
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string COUNTE { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? COUNTE { get; set; } = null!;
         public string? NOUNTE { get; set; } = null!;
         public int? CANALM { get; set; } = 0;
         public int? CACEED { get; set; } = 0;
         public string? JEUNTE { get; set; } = null!;
         public string? DIRECC { get; set; } = null!;
-        public float? COUBIX { get; set; } = 0;
-        public float? COUBIY { get; set; } = 0;
-        public Point? IDEASG { get; set; } = null!;
+        public Geometry? GEOMTR { get; set; } = null!;
+        public Geometry? IDEASG { get; set; } = null!;
     }
 }

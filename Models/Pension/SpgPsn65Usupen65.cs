@@ -9,15 +9,15 @@ namespace GeomidisSystem.Models.Pension
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string CODUSU { get; set; }
+        public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
+        public string? CODUSU { get; set; } = null!;
         public int? TIPDOC { get; set; } = 0;
         public string? NUMDOC { get; set; } = null!;
         public string? NOMCOM { get; set; } = null!;
         public string? DIRUSU { get; set; } = null!;
-        public string? DEPART { get; set; } = null!;
-        public string? PROVIN { get; set; } = null!;
-        public string? DISTRI { get; set; } = null!;
-        public string? NOCCPP { get; set; } = null!;
         public string? COCCPP { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public DateTime FEULVI { get; set; }

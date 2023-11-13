@@ -2,10 +2,10 @@ using NetTopologySuite.Geometries;
 using NetTopologySuite;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace GeomidisSystem.Models.Foncodes
+namespace GeomidisSystem.Models.Cuna_Mas
 {
-    [Table("spg_fcd_unterfon", Schema = "espaciales")]
-    public class SpgFcdUnterfon
+    [Table("spg_cums_untecuma", Schema = "espaciales")]
+    public class SpgCumsUntecumaObtener
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -14,9 +14,13 @@ namespace GeomidisSystem.Models.Foncodes
         public string FEMODIF { get; set; } = null!;
         public string FELIMIN { get; set; } = null!;
         public string? COUNTE { get; set; } = null!;
-        public string? NOUNTE { get; set; } = null!;
-        public int? CANDIS { get; set; } = 0;
+        public string? UNITER { get; set; } = null!;
+        public int? CACOGE { get; set; } = 0;
+        public int? CANFAM { get; set; } = 0;
+        public int? CANCOGE { get; set; } = 0;
+        public int? CANUSU { get; set; } = 0;
+        public int? CANLOC { get; set; } = 0;
+        public float[][]? COORDENADAS { get; set; } = null!;
         public Geometry? GEOMTR { get; set; } = null!;
-        public Geometry? IDEASG { get; set; } = null!;
     }
 }
