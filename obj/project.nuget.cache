@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x2NY6rMGK85HVZgGdrajSh14jPWWmh51xbIpOZGrDTTjoOgpDWS8oJj48kiMy4Ikp56tkRm2OjEDTAC9QNddXQ==",
+  "dgSpecHash": "cH8o/eyAdUqxTWwzjfQURkRwweLZvlTH5UGPE8ZTmly5BX/slm+w36LzL3Sxrn5oOE7lC8kCj/8SXVTZ4axhCg==",
   "success": true,
   "projectFilePath": "F:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj",
   "expectedPackageFiles": [
@@ -236,7 +236,11 @@
     "C:\\Users\\carba\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\carba\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\carba\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\carba\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\carba\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\carba\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\carba\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\carba\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\carba\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }
