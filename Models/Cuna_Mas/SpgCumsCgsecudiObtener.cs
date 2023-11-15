@@ -17,8 +17,8 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public int? COUNTE { get; set; } = 0;
         public float[][]? COORDENADAS { get; set; } = null!;
         public Geometry? GEOMTR { get; set; } = null!;
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
     }
 }

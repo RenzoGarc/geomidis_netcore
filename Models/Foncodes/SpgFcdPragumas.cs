@@ -10,15 +10,15 @@ namespace GeomidisSystem.Models.Foncodes
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public string? EXPEDI { get; set; } = null!;
         public string? NOMPRO { get; set; } = null!;
         public int? CANBEN { get; set; } = 0;
         public float? MONTOS { get; set; } = 0;
-        public DateTime FECINI { get; set; }
-        public DateTime FECTER { get; set; }
+        public string? FECINI { get; set; } = null!;
+        public string? FECTER { get; set; } = null!;
         public string? ESTINT { get; set; } = null!;
         public int? COUNTE { get; set; } = 0;
         public string? UBIGEO { get; set; } = null!;

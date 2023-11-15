@@ -3,6 +3,7 @@ using GeomidisSystem.Context;
 using NetTopologySuite.Geometries;
 using GeomidisSystem.Models.Qali_Warma;
 using GeomidisSystem.Services;
+using GeomidisSystem.Models.Juntos;
 
 namespace GeomidisSystem.Controllers
 {
@@ -112,7 +113,18 @@ namespace GeomidisSystem.Controllers
 
                     spgQwUnteqawa.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    
+                    spgQwUnteqawa.COUNTE = spgQwUnteqawaObtener[i].COUNTE;
+                    spgQwUnteqawa.NOUNTE = spgQwUnteqawaObtener[i].NOUNTE;
+                    spgQwUnteqawa.CANALM = spgQwUnteqawaObtener[i].CANALM;
+                    spgQwUnteqawa.CACEED = spgQwUnteqawaObtener[i].CACEED;
+                    spgQwUnteqawa.JEUNTE = spgQwUnteqawaObtener[i].JEUNTE;
+                    spgQwUnteqawa.DIRECC = spgQwUnteqawaObtener[i].DIRECC;
+
+                    //spgQwUnteqawa.GEOMTR = spgQwUnteqawaObtener[i].GEOMTR;
+
+                    spgQwUnteqawa.FECREA = spgQwUnteqawaObtener[i].FECREA;
+                    spgQwUnteqawa.FEMODIF = spgQwUnteqawaObtener[i].FEMODIF;
+                    spgQwUnteqawa.FELIMIN = spgQwUnteqawaObtener[i].FELIMIN;
 
                     _context.Add(spgQwUnteqawa);
                     await _context.SaveChangesAsync();

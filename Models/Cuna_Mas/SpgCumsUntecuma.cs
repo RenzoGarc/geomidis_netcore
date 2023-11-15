@@ -10,9 +10,9 @@ namespace GeomidisSystem.Models.Cuna_Mas
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public string? COUNTE { get; set; } = null!;
         public string? UNITER { get; set; } = null!;
         public int? CACOGE { get; set; } = 0;

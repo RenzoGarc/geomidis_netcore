@@ -10,9 +10,9 @@ namespace GeomidisSystem.Models.Diseno_Arte
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public string? COOLCO { get; set; } = null!;
         public string? NOOLCO { get; set; } = null!;
         public string? DIOLCO { get; set; } = null!;

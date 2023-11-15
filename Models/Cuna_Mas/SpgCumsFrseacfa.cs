@@ -25,8 +25,8 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public float? COUBIX { get; set; } = 0;
         public float? COUBIY { get; set; } = 0;
         public Point? IDEASG { get; set; } = null!;
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
     }
 }

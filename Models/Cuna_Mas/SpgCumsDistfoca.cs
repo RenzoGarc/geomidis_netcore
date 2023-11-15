@@ -12,7 +12,7 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public int CODOBJ { get; set; }
         public string? CODIFO { get; set; } = null!;
         public string? NRREMI { get; set; } = null!;
-        public DateTime FECAPR { get; set; }
+        public string? FECAPR { get; set; } = null!;
         public string? INFOAN { get; set; } = null!;
         public string? SERSAF { get; set; } = null!;
         public string? SERSCD { get; set; } = null!;
@@ -24,8 +24,8 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public string? INTERV { get; set; } = null!;
         public Geometry? IDEASG { get; set; } = null!;
         public Geometry? GEOMTR { get; set; } = null!;
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
     }
 }

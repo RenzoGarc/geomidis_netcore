@@ -3,6 +3,7 @@ using GeomidisSystem.Context;
 using NetTopologySuite.Geometries;
 using GeomidisSystem.Models.Juntos;
 using GeomidisSystem.Services;
+using GeomidisSystem.Models.Foncodes;
 
 namespace GeomidisSystem.Controllers
 {
@@ -89,7 +90,16 @@ namespace GeomidisSystem.Controllers
 
                     spgJtsUniterju.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    spgJtsUniterju.CODOBJ = spgJtsUniterjuObtener[i].CODOBJ;
+                    spgJtsUniterju.COUNTE = spgJtsUniterjuObtener[i].COUNTE;
+                    spgJtsUniterju.NOMUT = spgJtsUniterjuObtener[i].NOMUT;
+                    spgJtsUniterju.NUMIOB = spgJtsUniterjuObtener[i].NUMIOB;
+                    spgJtsUniterju.NUHOAB = spgJtsUniterjuObtener[i].NUHOAB;
+
+                    //spgJtsUniterju.GEOMTR = spgJtsUniterjuObtener[i].GEOMTR;
+
+                    spgJtsUniterju.FECREA = spgJtsUniterjuObtener[i].FECREA;
+                    spgJtsUniterju.FEMODIF = spgJtsUniterjuObtener[i].FEMODIF;
+                    spgJtsUniterju.FELIMIN = spgJtsUniterjuObtener[i].FELIMIN;
 
                     _context.Add(spgJtsUniterju);
                     await _context.SaveChangesAsync();

@@ -45,9 +45,19 @@ namespace GeomidisSystem.Controllers
 
                     spgCumsCgseacfa.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    spgCumsCgseacfa.CODOBJ = spgCumsCgseacfaObtener[i].CODOBJ;
                     spgCumsCgseacfa.COCOGE = spgCumsCgseacfaObtener[i].COCOGE;
                     spgCumsCgseacfa.NOCOGE = spgCumsCgseacfaObtener[i].NOCOGE;
+                    spgCumsCgseacfa.PRCOGE = spgCumsCgseacfaObtener[i].PRCOGE;
+                    spgCumsCgseacfa.FECCRE = spgCumsCgseacfaObtener[i].FECCRE;
+                    spgCumsCgseacfa.CANFAM = spgCumsCgseacfaObtener[i].CANFAM;
+                    spgCumsCgseacfa.ESTCOM = spgCumsCgseacfaObtener[i].ESTCOM;
+                    spgCumsCgseacfa.COUNTE = spgCumsCgseacfaObtener[i].COUNTE;
+
+                    //spgCumsDistfoca.GEOMTR = spgCumsDistfocaObtener[i].GEOMTR;
+
+                    spgCumsCgseacfa.FECREA = spgCumsCgseacfaObtener[i].FECREA;
+                    spgCumsCgseacfa.FEMODIF = spgCumsCgseacfaObtener[i].FEMODIF;
+                    spgCumsCgseacfa.FELIMIN = spgCumsCgseacfaObtener[i].FELIMIN;
 
                     _context.Add(spgCumsCgseacfa);
                     await _context.SaveChangesAsync();
@@ -87,9 +97,17 @@ namespace GeomidisSystem.Controllers
 
                     spgCumsCgsecudi.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    spgCumsCgsecudi.CODOBJ = spgCumsCgsecudiObtener[i].CODOBJ;
                     spgCumsCgsecudi.COCOGE = spgCumsCgsecudiObtener[i].COCOGE;
                     spgCumsCgsecudi.NOCOGE = spgCumsCgsecudiObtener[i].NOCOGE;
+                    spgCumsCgsecudi.CLOSDC = spgCumsCgsecudiObtener[i].CLOSDC;
+                    spgCumsCgsecudi.ESTCOM = spgCumsCgsecudiObtener[i].ESTCOM;
+                    spgCumsCgsecudi.COUNTE = spgCumsCgsecudiObtener[i].COUNTE;
+
+                    //spgCumsDistfoca.GEOMTR = spgCumsDistfocaObtener[i].GEOMTR;
+
+                    spgCumsCgsecudi.FECREA = spgCumsCgsecudiObtener[i].FECREA;
+                    spgCumsCgsecudi.FEMODIF = spgCumsCgsecudiObtener[i].FEMODIF;
+                    spgCumsCgsecudi.FELIMIN = spgCumsCgsecudiObtener[i].FELIMIN;
 
                     _context.Add(spgCumsCgsecudi);
                     await _context.SaveChangesAsync();
@@ -129,7 +147,24 @@ namespace GeomidisSystem.Controllers
 
                     spgCumsDistfoca.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    spgCumsDistfoca.CODOBJ = spgCumsDistfocaObtener[i].CODOBJ;
+                    spgCumsDistfoca.CODIFO = spgCumsDistfocaObtener[i].CODIFO;
+                    spgCumsDistfoca.NRREMI = spgCumsDistfocaObtener[i].NRREMI;
+                    spgCumsDistfoca.FECAPR = spgCumsDistfocaObtener[i].FECAPR;
+                    spgCumsDistfoca.INFOAN = spgCumsDistfocaObtener[i].INFOAN;
+                    spgCumsDistfoca.SERSAF = spgCumsDistfocaObtener[i].SERSAF;
+                    spgCumsDistfoca.SERSCD = spgCumsDistfocaObtener[i].SERSCD;
+                    spgCumsDistfoca.POBSAF = spgCumsDistfocaObtener[i].POBSAF;
+                    spgCumsDistfoca.POBSCD = spgCumsDistfocaObtener[i].POBSCD;
+                    spgCumsDistfoca.CANFAM = spgCumsDistfocaObtener[i].CANFAM;
+                    spgCumsDistfoca.CANUSU = spgCumsDistfocaObtener[i].CANUSU;
+                    spgCumsDistfoca.CANLOC = spgCumsDistfocaObtener[i].CANLOC;
+                    spgCumsDistfoca.INTERV = spgCumsDistfocaObtener[i].INTERV;
+
+                    //spgCumsDistfoca.GEOMTR = spgCumsDistfocaObtener[i].GEOMTR;
+
+                    spgCumsDistfoca.FECREA = spgCumsDistfocaObtener[i].FECREA;
+                    spgCumsDistfoca.FEMODIF = spgCumsDistfocaObtener[i].FEMODIF;
+                    spgCumsDistfoca.FELIMIN = spgCumsDistfocaObtener[i].FELIMIN;
 
                     _context.Add(spgCumsDistfoca);
                     await _context.SaveChangesAsync();
@@ -307,7 +342,19 @@ namespace GeomidisSystem.Controllers
 
                     spgCumsUntecuma.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    spgCumsUntecuma.CODOBJ = spgCumsUntecumaObtener[i].CODOBJ;
+                    spgCumsUntecuma.COUNTE = spgCumsUntecumaObtener[i].COUNTE;
+                    spgCumsUntecuma.UNITER = spgCumsUntecumaObtener[i].UNITER;
+                    spgCumsUntecuma.CACOGE = spgCumsUntecumaObtener[i].CACOGE;
+                    spgCumsUntecuma.CANFAM = spgCumsUntecumaObtener[i].CANFAM;
+                    spgCumsUntecuma.CANCOGE = spgCumsUntecumaObtener[i].CANCOGE;
+                    spgCumsUntecuma.CANUSU = spgCumsUntecumaObtener[i].CANUSU;
+                    spgCumsUntecuma.CANLOC = spgCumsUntecumaObtener[i].CANLOC;
+
+                    //spgCumsUntecuma.GEOMTR = spgCumsUntecumaObtener[i].GEOMTR;
+
+                    spgCumsUntecuma.FECREA = spgCumsUntecumaObtener[i].FECREA;
+                    spgCumsUntecuma.FEMODIF = spgCumsUntecumaObtener[i].FEMODIF;
+                    spgCumsUntecuma.FELIMIN = spgCumsUntecumaObtener[i].FELIMIN;
 
                     _context.Add(spgCumsUntecuma);
                     await _context.SaveChangesAsync();

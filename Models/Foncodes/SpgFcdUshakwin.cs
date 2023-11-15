@@ -10,9 +10,9 @@ namespace GeomidisSystem.Models.Foncodes
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public int? DNJEHO { get; set; } = 0;
         public string? NOJEHO { get; set; } = null!;
         public string? OCJEHO { get; set; } = null!;

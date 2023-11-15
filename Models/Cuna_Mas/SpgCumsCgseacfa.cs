@@ -14,14 +14,14 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public string? COCOGE { get; set; } = null!;
         public string? NOCOGE { get; set; } = null!;
         public string? PRCOGE { get; set; } = null!;
-        public DateTime FECCRE { get; set; }
+        public string? FECCRE { get; set; } = null!;
         public int? CANFAM { get; set; } = 0;
         public string? ESTCOM { get; set; } = null!;
         public int? COUNTE { get; set; } = 0;
         public Geometry? IDEASG { get; set; } = null!;
         public Geometry? GEOMTR { get; set; } = null!;
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
     }
 }

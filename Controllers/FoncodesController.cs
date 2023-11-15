@@ -3,6 +3,7 @@ using GeomidisSystem.Context;
 using NetTopologySuite.Geometries;
 using GeomidisSystem.Models.Foncodes;
 using GeomidisSystem.Services;
+using GeomidisSystem.Models.Cuna_Mas;
 
 namespace GeomidisSystem.Controllers
 {
@@ -89,7 +90,16 @@ namespace GeomidisSystem.Controllers
 
                     spgFcdCobhawi.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    spgFcdCobhawi.CODOBJ = spgFcdCobhawiObtener[i].CODOBJ;
+                    spgFcdCobhawi.UBIGEO = spgFcdCobhawiObtener[i].UBIGEO;
+                    spgFcdCobhawi.CANHOG = spgFcdCobhawiObtener[i].CANHOG;
+                    spgFcdCobhawi.CACEPO = spgFcdCobhawiObtener[i].CACEPO;
+
+                    //spgFcdCobhawi.GEOMTR = spgCumsDistfocaObtener[i].GEOMTR;
+
+                    spgFcdCobhawi.FECREA = spgFcdCobhawiObtener[i].FECREA;
+                    spgFcdCobhawi.FEMODIF = spgFcdCobhawiObtener[i].FEMODIF;
+                    spgFcdCobhawi.FELIMIN = spgFcdCobhawiObtener[i].FELIMIN;
+
 
                     _context.Add(spgFcdCobhawi);
                     await _context.SaveChangesAsync();
@@ -221,7 +231,15 @@ namespace GeomidisSystem.Controllers
 
                     spgFcdUnterfon.IDEASG = new Polygon(new LinearRing(newCoordinate)) { SRID = 4326 };
 
-                    spgFcdUnterfon.CODOBJ = spgFcdUnterfonObtener[i].CODOBJ;
+                    spgFcdUnterfon.COUNTE = spgFcdUnterfonObtener[i].COUNTE;
+                    spgFcdUnterfon.NOUNTE = spgFcdUnterfonObtener[i].NOUNTE;
+                    spgFcdUnterfon.CANDIS = spgFcdUnterfonObtener[i].CANDIS;
+
+                    //spgFcdUnterfon.GEOMTR = spgFcdUnterfonObtener[i].GEOMTR;
+
+                    spgFcdUnterfon.FECREA = spgFcdUnterfonObtener[i].FECREA;
+                    spgFcdUnterfon.FEMODIF = spgFcdUnterfonObtener[i].FEMODIF;
+                    spgFcdUnterfon.FELIMIN = spgFcdUnterfonObtener[i].FELIMIN;
 
                     _context.Add(spgFcdUnterfon);
                     await _context.SaveChangesAsync();

@@ -10,9 +10,9 @@ namespace GeomidisSystem.Models.Pension
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public string? CODUSU { get; set; } = null!;
         public int? TIPDOC { get; set; } = 0;
         public string? NUMDOC { get; set; } = null!;
@@ -20,7 +20,7 @@ namespace GeomidisSystem.Models.Pension
         public string? DIRUSU { get; set; } = null!;
         public string? COCCPP { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
-        public DateTime FEULVI { get; set; }
+        public string? FEULVI { get; set; } = null!;
         public string? CONVIS { get; set; } = null!;
         public string? TIPUSU { get; set; } = null!;
         public string? COPUPA { get; set; } = null!;

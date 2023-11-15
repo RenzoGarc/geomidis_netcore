@@ -28,8 +28,8 @@ namespace GeomidisSystem.Models.Contigo
         public float? CUBVIX { get; set; } = 0;
         public float? CUBVIY { get; set; } = 0;
         public Point? IDEASG { get; set; } = null!;
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
     }
 }

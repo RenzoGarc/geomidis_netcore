@@ -10,9 +10,9 @@ namespace GeomidisSystem.Models.Pension
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public string? COPUPA { get; set; } = null!;
         public string? NOPUPA { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
