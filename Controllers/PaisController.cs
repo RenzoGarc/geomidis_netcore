@@ -4,6 +4,7 @@ using GeomidisSystem.Context;
 using NetTopologySuite.Geometries;
 using GeomidisSystem.Models.Pais;
 using GeomidisSystem.Services;
+using GeomidisSystem.Models.Masters;
 
 namespace GeomidisSystem.Controllers
 {
@@ -24,6 +25,7 @@ namespace GeomidisSystem.Controllers
         [Route("caratambs")]
         public async Task<IActionResult> RegisterCaratambs(List<SpgPsCaratamb> spgPsCaratamb)
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
                 for (int i = 0; i < spgPsCaratamb.Count; i++)
@@ -34,12 +36,18 @@ namespace GeomidisSystem.Controllers
                     spgPsCaratamb[i].IDEASG = new Point(Long, Lat) { SRID = 4326 };
                     Console.WriteLine(spgPsCaratamb[i]);
                     await _context.SaveChangesAsync();
+                    respuesta.message = "Registro correcto!";
+                    respuesta.status = 200;
+                    return StatusCode(200, respuesta);
                 }
                 return StatusCode(200, "Registro correcto!");
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
         // EJEMPLO CON SERVICIOS
@@ -47,9 +55,15 @@ namespace GeomidisSystem.Controllers
         [Route("puatpias")]
         public async Task<IActionResult> RegisterPuatpias()
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
                 var spgPsPuatpias = await paisServices.Puatpias();
+
+                if (spgPsPuatpias.Count == 0)
+                {
+                    return StatusCode(500, "No se registraron datos!");
+                }
 
                 for (int i = 0; i < spgPsPuatpias.Count; i++)
                 {
@@ -59,11 +73,16 @@ namespace GeomidisSystem.Controllers
                     spgPsPuatpias[i].IDEASG = new Point(Long, Lat) { SRID = 4326 };
                     await _context.SaveChangesAsync();
                 }
-                return StatusCode(200, "Registro correcto!");
+                respuesta.message = "Registro correcto!";
+                respuesta.status = 200;
+                return StatusCode(200, respuesta);
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
 
@@ -71,6 +90,7 @@ namespace GeomidisSystem.Controllers
         [Route("sumontam")]
         public async Task<IActionResult> RegisterSumontam(List<SpgPsSumontam> SpgPsSumontam)
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
                 for (int i = 0; i < SpgPsSumontam.Count; i++)
@@ -82,11 +102,16 @@ namespace GeomidisSystem.Controllers
                     Console.WriteLine(SpgPsSumontam[i]);
                     await _context.SaveChangesAsync();
                 }
-                return StatusCode(200, "Registro correcto!");
+                respuesta.message = "Registro correcto!";
+                respuesta.status = 200;
+                return StatusCode(200, respuesta);
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
 
@@ -94,6 +119,7 @@ namespace GeomidisSystem.Controllers
         [Route("tambos")]
         public async Task<IActionResult> RegisterTambos(List<SpgPsTambos> spgPsTambos)
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
                 for (int i = 0; i < spgPsTambos.Count; i++)
@@ -105,11 +131,16 @@ namespace GeomidisSystem.Controllers
                     Console.WriteLine(spgPsTambos[i]);
                     await _context.SaveChangesAsync();
                 }
-                return StatusCode(200, "Registro correcto!");
+                respuesta.message = "Registro correcto!";
+                respuesta.status = 200;
+                return StatusCode(200, respuesta);
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
 
@@ -117,6 +148,7 @@ namespace GeomidisSystem.Controllers
         [Route("unidterr")]
         public async Task<IActionResult> RegisterUnidterr(List<SpgPsUnidterr> spgPsUnidterrs)
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
                 for (int i = 0; i < spgPsUnidterrs.Count; i++)
@@ -128,11 +160,16 @@ namespace GeomidisSystem.Controllers
                     Console.WriteLine(spgPsUnidterrs[i]);
                     await _context.SaveChangesAsync();
                 }
-                return StatusCode(200, "Registro correcto!");
+                respuesta.message = "Registro correcto!";
+                respuesta.status = 200;
+                return StatusCode(200, respuesta);
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
     }

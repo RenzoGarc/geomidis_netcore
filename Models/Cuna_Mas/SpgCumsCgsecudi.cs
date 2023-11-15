@@ -21,3 +21,4 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public string? FEMODIF { get; set; } = null!;
         public string? FELIMIN { get; set; } = null!;
     }
+}
