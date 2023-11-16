@@ -9,11 +9,12 @@ namespace GeomidisSystem.Models.Foncodes
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string COCEPO { get; set; }
-        public string? CPHAWI { get; set; } = null!;
-        public string? DEHAWI { get; set; } = null!;
-        public string? PRHAWI { get; set; } = null!;
-        public string? DIHAWI { get; set; } = null!;
+        public int CODOBJ { get; set; }
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
+        public string? COCEPO { get; set; } = null!;
+        public string? UBIGEO { get; set; } = null!;
         public string? CONCEPO { get; set; } = null!;
         public float? COOUBX { get; set; } = 0;
         public float? COOUBY { get; set; } = 0;

@@ -9,12 +9,13 @@ namespace GeomidisSystem.Models.Pension
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string CODAGE { get; set; }
+        public int CODOBJ { get; set; }
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
+        public string? CODAGE { get; set; } = null!;
         public string? NOMAGE { get; set; } = null!;
         public string? DIRECC { get; set; } = null!;
-        public string? DEPART { get; set; } = null!;
-        public string? PROVIN { get; set; } = null!;
-        public string? DISTRI { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? ESTABN { get; set; } = null!;
         public float? COUBIX { get; set; } = 0;

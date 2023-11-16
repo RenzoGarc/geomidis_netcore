@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace GeomidisSystem.Models.Cuna_Mas
 {
     [Table("spg_cums_untecuma", Schema = "espaciales")]
-    public class SpgCumsUntecuma
+    public class SpgCumsUntecumaObtener
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,7 +20,7 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public int? CANCOGE { get; set; } = 0;
         public int? CANUSU { get; set; } = 0;
         public int? CANLOC { get; set; } = 0;
-        public Geometry? IDEASG { get; set; } = null!;
+        public float[][]? COORDENADAS { get; set; } = null!;
         public Geometry? GEOMTR { get; set; } = null!;
     }
 }

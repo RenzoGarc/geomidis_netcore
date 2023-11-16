@@ -2,10 +2,10 @@ using NetTopologySuite.Geometries;
 using NetTopologySuite;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace GeomidisSystem.Models.Juntos
+namespace GeomidisSystem.Models.Foncodes
 {
-    [Table("spg_jts_seuniter", Schema = "espaciales")]
-    public class SpgJtsSeuniter
+    [Table("spg_fcd_unterfon", Schema = "espaciales")]
+    public class SpgFcdUnterfonObtener
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -14,12 +14,9 @@ namespace GeomidisSystem.Models.Juntos
         public string? FEMODIF { get; set; } = null!;
         public string? FELIMIN { get; set; } = null!;
         public string? COUNTE { get; set; } = null!;
-        public string? JEUNTE { get; set; } = null!;
-        public int? TEUNTE { get; set; } = 0;
-        public string? DIRECC { get; set; } = null!;
-        public string? UBIGEO { get; set; } = null!;
-        public float? COUBIX { get; set; } = 0;
-        public float? COUBIY { get; set; } = 0;
-        public Point? IDEASG { get; set; } = null!;
+        public string? NOUNTE { get; set; } = null!;
+        public int? CANDIS { get; set; } = 0;
+        public Geometry? GEOMTR { get; set; } = null!;
+        public float[][]? COORDENADAS { get; set; } = null!;
     }
 }

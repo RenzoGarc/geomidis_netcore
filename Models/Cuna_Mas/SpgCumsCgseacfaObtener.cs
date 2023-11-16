@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace GeomidisSystem.Models.Cuna_Mas
 {
     [Table("spg_cums_cgseacfa", Schema = "espaciales")]
-    public class SpgCumsCgseacfa
+    public class SpgCumsCgseacfaObtener
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -18,7 +18,7 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public int? CANFAM { get; set; } = 0;
         public string? ESTCOM { get; set; } = null!;
         public int? COUNTE { get; set; } = 0;
-        public Geometry? IDEASG { get; set; } = null!;
+        public float[][]? COORDENADAS { get; set; } = null!;
         public Geometry? GEOMTR { get; set; } = null!;
         public string? FECREA { get; set; } = null!;
         public string? FEMODIF { get; set; } = null!;
