@@ -24,6 +24,7 @@ namespace GeomidisSystem.Models.Foncodes
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
         public int? CAALBE { get; set; } = 0;
+        public int? CANALU { get; set; } = 0;
         public int? CANDOC { get; set; } = 0;
         public string? FECINI { get; set; } = null!;
         public string? FECTER { get; set; } = null!;

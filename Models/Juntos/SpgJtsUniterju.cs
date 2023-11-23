@@ -15,6 +15,7 @@ namespace GeomidisSystem.Models.Juntos
         public string? FELIMIN { get; set; } = null!;
         public string? COUNTE { get; set; } = null!;
         public string? NOMUT { get; set; } = null!;
+        public int? NUHOAF { get; set; } = 0;
         public string? NUMIOB { get; set; } = null!;
         public string? NUHOAB { get; set; } = null!;
         public Geometry? GEOM { get; set; } = null!;
