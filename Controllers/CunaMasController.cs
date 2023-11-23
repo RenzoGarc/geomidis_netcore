@@ -201,7 +201,7 @@ namespace GeomidisSystem.Controllers
         }
 
         [HttpPost]
-        [Route("loceinai")]
+        [Route("ciai")]
         public async Task<IActionResult> RegisterLoceinai(List<SpgCumsLoceinai> spgCumsLoceinai)
         {
             try

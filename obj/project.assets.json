@@ -11414,19 +11414,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carba\\.nuget\\packages\\": {}
+    "C:\\Users\\diego\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj",
+      "projectUniqueName": "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\GeomidisSystem.csproj",
       "projectName": "GeomidisSystem",
-      "projectPath": "F:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\GeomidisSystem.csproj",
-      "packagesPath": "C:\\Users\\carba\\.nuget\\packages\\",
-      "outputPath": "F:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\obj\\",
+      "projectPath": "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\GeomidisSystem.csproj",
+      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\diego\\source\\repos\\geomidis_netcore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\carba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11502,16 +11502,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché F:\\Ideasg\\geomidis\\proyecto\\back\\geomidis_netcore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
