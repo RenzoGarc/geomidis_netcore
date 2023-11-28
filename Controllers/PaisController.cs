@@ -51,26 +51,55 @@ namespace GeomidisSystem.Controllers
             }
         }
         // EJEMPLO CON SERVICIOS
+        //[HttpPost]
+        //[Route("puatpias")]
+        //public async Task<IActionResult> RegisterPuatpias()
+        //{
+        //    Respuesta respuesta = new Respuesta();
+        //    try
+        //    {
+        //        var spgPsPuatpias = await paisServices.Puatpias();
+
+        //        if (spgPsPuatpias.Count == 0)
+        //        {
+        //            return StatusCode(500, "No se registraron datos!");
+        //        }
+
+        //        for (int i = 0; i < spgPsPuatpias.Count; i++)
+        //        {
+        //            _context.Add(spgPsPuatpias[i]);
+        //            float Long = (float)spgPsPuatpias[i].COUBIX;
+        //            float Lat = (float)spgPsPuatpias[i].COUBIY;
+        //            spgPsPuatpias[i].IDEASG = new Point(Long, Lat) { SRID = 4326 };
+        //            await _context.SaveChangesAsync();
+        //        }
+        //        respuesta.message = "Registro correcto!";
+        //        respuesta.status = 200;
+        //        return StatusCode(200, respuesta);
+        //    }
+        //    catch (IOException ex)
+        //    {
+        //        respuesta.error = true;
+        //        respuesta.message = "Error al realizar registro!" + ex;
+        //        respuesta.status = 400;
+        //        return StatusCode(500, respuesta);
+        //    }
+        //}
+
         [HttpPost]
         [Route("puatpias")]
-        public async Task<IActionResult> RegisterPuatpias()
+        public async Task<IActionResult> RegisterPuatpias(List<SpgPsPuatpias> spgPsPuatpias)
         {
             Respuesta respuesta = new Respuesta();
             try
             {
-                var spgPsPuatpias = await paisServices.Puatpias();
-
-                if (spgPsPuatpias.Count == 0)
-                {
-                    return StatusCode(500, "No se registraron datos!");
-                }
-
                 for (int i = 0; i < spgPsPuatpias.Count; i++)
                 {
                     _context.Add(spgPsPuatpias[i]);
                     float Long = (float)spgPsPuatpias[i].COUBIX;
                     float Lat = (float)spgPsPuatpias[i].COUBIY;
                     spgPsPuatpias[i].IDEASG = new Point(Long, Lat) { SRID = 4326 };
+                    Console.WriteLine(spgPsPuatpias[i]);
                     await _context.SaveChangesAsync();
                 }
                 respuesta.message = "Registro correcto!";
