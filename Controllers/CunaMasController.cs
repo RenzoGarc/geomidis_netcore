@@ -178,7 +178,7 @@ namespace GeomidisSystem.Controllers
         }
 
         [HttpPost]
-        [Route("frseacfa")]
+        [Route("saf")]
         public async Task<IActionResult> RegisterFrseacfa(List<SpgCumsFrseacfa> spgCumsFrseacfa)
         {
             try
@@ -201,7 +201,7 @@ namespace GeomidisSystem.Controllers
         }
 
         [HttpPost]
-        [Route("loceinai")]
+        [Route("ciai")]
         public async Task<IActionResult> RegisterLoceinai(List<SpgCumsLoceinai> spgCumsLoceinai)
         {
             try
@@ -224,7 +224,7 @@ namespace GeomidisSystem.Controllers
         }
 
         [HttpPost]
-        [Route("loserali")]
+        [Route("sa")]
         public async Task<IActionResult> RegisterLoserali(List<SpgCumsLoserali> spgCumsLoserali)
         {
             try

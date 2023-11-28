@@ -16,6 +16,7 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public string? CODLOC { get; set; } = null!;
         public string? SERALI { get; set; } = null!;
         public string? COMGES { get; set; } = null!;
+        public string? COUNTE { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
         public string? DIRECC { get; set; } = null!;

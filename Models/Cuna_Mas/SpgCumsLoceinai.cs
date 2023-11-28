@@ -15,6 +15,7 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public string? FELIMIN { get; set; } = null!; 
         public string? CODLOC { get; set; } = null!;
         public string? NOMLOC { get; set; } = null!;
+        public string? ESTLOC { get; set; } = null!;
         public string? COMGES { get; set; } = null!;
         public int? CAPOPE { get; set; } = 0;
         public int? NNULAS { get; set; } = 0;

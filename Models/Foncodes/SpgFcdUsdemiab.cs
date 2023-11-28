@@ -13,6 +13,7 @@ namespace GeomidisSystem.Models.Foncodes
         public string? FECREA { get; set; } = null!;
         public string? FEMODIF { get; set; } = null!;
         public string? FELIMIN { get; set; } = null!;
+        public int? NDJEHO { get; set; } = 0;
         public string? NOJEHO { get; set; } = null!;
         public string? APJEHO { get; set; } = null!;
         public string? FECNAC { get; set; } = null!;
