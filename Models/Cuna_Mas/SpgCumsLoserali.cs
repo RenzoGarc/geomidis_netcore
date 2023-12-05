@@ -19,6 +19,7 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public string? COUNTE { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public string? DIRECC { get; set; } = null!;
         public string? REFERE { get; set; } = null!;
         public string? ESTLSA { get; set; } = null!;

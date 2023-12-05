@@ -10,6 +10,9 @@ namespace GeomidisSystem.Models.Cuna_Mas
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public string? CODFAM { get; set; } = null!;
         public string? UNITER { get; set; } = null!;
         public string? COMGES { get; set; } = null!;
@@ -20,13 +23,12 @@ namespace GeomidisSystem.Models.Cuna_Mas
         public int? CANGES { get; set; } = 0;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public string? DIRECC { get; set; } = null!;
         public string? REFERE { get; set; } = null!;
         public float? COUBIX { get; set; } = 0;
         public float? COUBIY { get; set; } = 0;
         public Point? IDEASG { get; set; } = null!;
-        public string? FECREA { get; set; } = null!;
-        public string? FEMODIF { get; set; } = null!;
-        public string? FELIMIN { get; set; } = null!;
+        
     }
 }

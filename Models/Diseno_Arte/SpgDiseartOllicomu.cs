@@ -18,6 +18,7 @@ namespace GeomidisSystem.Models.Diseno_Arte
         public string? DIOLCO { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public int? DNIREP { get; set; } = 0;
         public string? NOMREP { get; set; } = null!;
         public string? DIRREP { get; set; } = null!;

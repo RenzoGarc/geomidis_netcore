@@ -11,10 +11,14 @@ namespace GeomidisSystem.Models.Pais
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
+        public string FECREA { get; set; } = null!;
+        public string FEMODIF { get; set; } = null!;
+        public string FELIMIN { get; set; } = null!;
         public string CODTAM { get; set; } = null!;
         public string? NOMTAM { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public float? COCEPO { get; set; } = 0;
+        public string? CENPOB { get; set; } = null!;
         public int? ALTITU { get; set; } = 0;
         public int? CANPOB { get; set; } = 0;
         public int? CANVIV { get; set; } = 0;
@@ -34,9 +38,6 @@ namespace GeomidisSystem.Models.Pais
         public int? NUMATE { get; set; } = 0;
         public int? NUMUSU { get; set; } = 0;
         public string? COUNTE { get; set; } = null!;
-        public string FECREA { get; set; } = null!;
-        public string FEMODIF { get; set; } = null!;
-        public string FELIMIN { get; set; } = null!;
         public float? COUBIX { get; set; } = 0;
         public float? COUBIY { get; set; } = 0;
         public Point? IDEASG { get; set; } = null!;

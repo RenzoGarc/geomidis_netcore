@@ -17,6 +17,7 @@ namespace GeomidisSystem.Models.Foncodes
         public string? NOMPRO { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public float? MONINV { get; set; } = 0;
         public string? ESTADO { get; set; } = null!;
         public string? FECINI { get; set; } = null!;

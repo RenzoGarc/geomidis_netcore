@@ -22,6 +22,7 @@ namespace GeomidisSystem.Models.Juntos
         public string? CELULA { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public string? COUNTE { get; set; } = null!;
         public float? COUBIX { get; set; } = 0;
         public float? COUBIY { get; set; } = 0;

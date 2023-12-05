@@ -10,6 +10,9 @@ namespace GeomidisSystem.Models.Contigo
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CODOBJ { get; set; }
+        public string? FECREA { get; set; } = null!;
+        public string? FEMODIF { get; set; } = null!;
+        public string? FELIMIN { get; set; } = null!;
         public int? TIPDOC { get; set; } = 0;
         public int? NRODOC { get; set; } = 0;
         public string? NOMCOM { get; set; } = null!;
@@ -18,12 +21,12 @@ namespace GeomidisSystem.Models.Contigo
         public string? TIPACO { get; set; } = null!;
         public string? VISACO { get; set; } = null!;
         public string? FOFACA { get; set; } = null!;
+        public string? UBIGEO { get; set; } = null!;
+        public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public float? CUBVIX { get; set; } = 0;
         public float? CUBVIY { get; set; } = 0;
-        public string? UBIGEO { get; set; } = null!;
         public Point? IDEASG { get; set; } = null!;
-        public string? FECREA { get; set; } = null!;
-        public string? FEMODIF { get; set; } = null!;
-        public string? FELIMIN { get; set; } = null!;
+        
     }
 }

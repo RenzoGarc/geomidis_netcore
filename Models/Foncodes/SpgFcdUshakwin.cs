@@ -18,6 +18,7 @@ namespace GeomidisSystem.Models.Foncodes
         public string? OCJEHO { get; set; } = null!;
         public int? FOTOS5 { get; set; } = 0;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? TIPPRO { get; set; } = null!;
         public float? MOINPR { get; set; } = 0;
