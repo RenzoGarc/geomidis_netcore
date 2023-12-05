@@ -19,6 +19,7 @@ namespace GeomidisSystem.Models.Pension
         public string? NOMCOM { get; set; } = null!;
         public string? DIRUSU { get; set; } = null!;
         public string? COCCPP { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? FEULVI { get; set; } = null!;
         public string? CONVIS { get; set; } = null!;
