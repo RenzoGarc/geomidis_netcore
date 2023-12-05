@@ -18,6 +18,7 @@ namespace GeomidisSystem.Models.Diseno_Arte
         public string? DIRCOM { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public int? CANBEN { get; set; } = 0;
         public string? ESTCOM { get; set; } = null!;
         public string? RRCEAT { get; set; } = null!;

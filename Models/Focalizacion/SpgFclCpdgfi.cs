@@ -14,6 +14,7 @@ namespace GeomidisSystem.Models.Focalizacion
         public string? FEMODIF { get; set; } = null!;
         public string? FELIMIN { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public float? COUBIX { get; set; } = 0;
         public float? COUBIY { get; set; } = 0;

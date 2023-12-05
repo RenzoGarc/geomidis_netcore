@@ -24,6 +24,7 @@ namespace GeomidisSystem.Models.Foncodes
         public string? DIRNUC { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public int? COUNTE { get; set; } = 0;
         public float? COOUBX { get; set; } = 0;
         public float? COOUBY { get; set; } = 0;

@@ -23,6 +23,7 @@ namespace GeomidisSystem.Models.Foncodes
         public int? FOTOHO { get; set; } = 0;
         public string? DIREHO { get; set; } = null!;
         public string? COCEPO { get; set; } = null!;
+        public string? CENPOB { get; set; } = null!;
         public string? UBIGEO { get; set; } = null!;
         public string? COUNTE { get; set; } = null!;
         public string? TIPREG { get; set; } = null!;
