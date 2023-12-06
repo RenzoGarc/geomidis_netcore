@@ -4,6 +4,9 @@ using NetTopologySuite.Geometries;
 using GeomidisSystem.Models.Juntos;
 using GeomidisSystem.Services;
 using GeomidisSystem.Models.Foncodes;
+using GeomidisSystem.Models.Masters;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace GeomidisSystem.Controllers
 {
@@ -21,8 +24,12 @@ namespace GeomidisSystem.Controllers
         [Route("hogajunt")]
         public async Task<IActionResult> RegisterHogajunt(List<SpgJtsHogajunt> spgJtsHogajunt)
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
+                _context.spgJtsHogajunt.ExecuteUpdate(
+                s => s.SetProperty(b => b.b_activo, false));
+                await _context.SaveChangesAsync();
                 for (int i = 0; i < spgJtsHogajunt.Count; i++)
                 {
                     _context.Add(spgJtsHogajunt[i]);
@@ -32,11 +39,16 @@ namespace GeomidisSystem.Controllers
                     Console.WriteLine(spgJtsHogajunt[i]);
                     await _context.SaveChangesAsync();
                 }
-                return StatusCode(200, "Registro correcto!");
+                respuesta.message = "Registro correcto!";
+                respuesta.status = 200;
+                return StatusCode(200, respuesta);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
 
@@ -44,8 +56,12 @@ namespace GeomidisSystem.Controllers
         [Route("seuniter")]
         public async Task<IActionResult> RegisterSeuniter(List<SpgJtsSeuniter> spgJtsSeuniter)
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
+                _context.spgJtsSeuniter.ExecuteUpdate(
+                s => s.SetProperty(b => b.b_activo, false));
+                await _context.SaveChangesAsync();
                 for (int i = 0; i < spgJtsSeuniter.Count; i++)
                 {
                     _context.Add(spgJtsSeuniter[i]);
@@ -55,11 +71,16 @@ namespace GeomidisSystem.Controllers
                     Console.WriteLine(spgJtsSeuniter[i]);
                     await _context.SaveChangesAsync();
                 }
-                return StatusCode(200, "Registro correcto!");
+                respuesta.message = "Registro correcto!";
+                respuesta.status = 200;
+                return StatusCode(200, respuesta);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
 
@@ -67,8 +88,12 @@ namespace GeomidisSystem.Controllers
         [Route("uniterju")]
         public async Task<IActionResult> Create(List<SpgJtsUniterjuObtener> spgJtsUniterjuObtener)
         {
+            Respuesta respuesta = new Respuesta();
             try
             {
+                _context.spgJtsUniterju.ExecuteUpdate(
+                s => s.SetProperty(b => b.b_activo, false));
+                await _context.SaveChangesAsync();
                 // EJEMPLO PARA LINESTRING
                 //Coordinate coord1 = new(74.6523332, 21.213213);
                 //Coordinate coord2 = new(80.2321312, 25.563213);
@@ -104,11 +129,16 @@ namespace GeomidisSystem.Controllers
                     _context.Add(spgJtsUniterju);
                     await _context.SaveChangesAsync();
                 }
-                return StatusCode(200, "Registro correcto!");
+                respuesta.message = "Registro correcto!";
+                respuesta.status = 200;
+                return StatusCode(200, respuesta);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                respuesta.error = true;
+                respuesta.message = "Error al realizar registro!" + ex;
+                respuesta.status = 400;
+                return StatusCode(500, respuesta);
             }
         }
 

@@ -18,6 +18,7 @@ namespace GeomidisSystem.Models.Juntos
         public int? NUHOAF { get; set; } = 0;
         public string? NUMIOB { get; set; } = null!;
         public string? NUHOAB { get; set; } = null!;
+        public bool? b_activo { get; set; } = true;
         public Geometry? GEOM { get; set; } = null!;
         public Geometry? IDEASG { get; set; } = null!;
     }

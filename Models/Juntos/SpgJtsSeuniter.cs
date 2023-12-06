@@ -20,6 +20,7 @@ namespace GeomidisSystem.Models.Juntos
         public string? UBIGEO { get; set; } = null!;
         public float? COUBIX { get; set; } = 0;
         public float? COUBIY { get; set; } = 0;
+        public bool? b_activo { get; set; } = true;
         public Point? IDEASG { get; set; } = null!;
     }
 }
